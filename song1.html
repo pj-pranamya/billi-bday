@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song 1</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .album-cover img {
+            width: 80%;
+            border: 10px solid white;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        audio {
+            width: 100%;
+            margin: 20px 0;
+        }
+        .lyrics {
+            height: 200px;
+            overflow-y: auto;
+            padding: 10px;
+            background: #f0f0f0;
+            color: black;
+            border-radius: 10px;
+            text-align: left;
+            white-space: pre-wrap;
+        }
+        button {
+            margin-top: 20px;
+            padding: 15px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="album-cover">
+        <img src="song1-cover.jpg" alt="Song 1 Cover">
+    </div>
+    <audio controls>
+        <source src="song1.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="lyrics">
+        Lyrics for Song 1 go here...
+    </div>
+    <button onclick="window.location.href='index.html'">← Go Back</button>
+</body>
+</html>
